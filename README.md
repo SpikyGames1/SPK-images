@@ -22,9 +22,9 @@ tcc -o spk_viewer spkimageviewer.c -lSDL2 -lSDL2-image
 
 Once that is done you should have a `spk_viewer` file in the same directory as the `spkimageviewer.c` file. You can convert PNG into SPK and view them instantly by using:
 ```
-./spk_viewer <input png file> <output spk file>
+./spk_viewer input-png-file output-spk-file
 ```
-Make sure to replace <input png file> and <out spk file> with the appropriate file extension.
+Make sure to replace "input-png-file" and "output-spk-file with the appropriate file extension.
 
 (I know everyone think C is outdated but still is more cool than 50% of people out there.... JKJK =P)
 (either way you are the best and have an amazing day!)
