@@ -7,17 +7,17 @@ in order to run the `spkimageviewer.c` file, you must have a C Compiler (GCC rec
 
 # CLang:
 ```
-clang -o spk_viewer spkimageviewer.c -lSDL2
+clang -o spk_viewer spkimageviewer.c -lSDL2 -lSDL2-image
 ```
 
 # GCC:
 ```
-gcc -o spk_viewer spkimageviewer.c -lSDL2
+gcc -o spk_image spkimageviewer.c -lSDL2 -lSDL2_image
 ```
 
 # TinyCC (TCC):
 ```
-tcc -o spk_viewer spkimageviewer.c -lSDL2
+tcc -o spk_viewer spkimageviewer.c -lSDL2 -lSDL2-image
 ```
 
 Once that is done you should have a `spk_viewer` file in the same directory as the `spkimageviewer.c` file. You can convert PNG into SPK and view them instantly by using:
