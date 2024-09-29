@@ -90,8 +90,14 @@ void display_spk_image(const char *spk_file) {
     SDL_RenderCopy(renderer, texture, NULL, NULL);
     SDL_RenderPresent(renderer);
 
-    // Wait for a few seconds before closing
-    SDL_Delay(5000);
+    // Event handling loop
+    SDL_Event event;
+    while (1) {
+        SDL_WaitEvent(&event);
+        if (event.type == SDL_QUIT) {
+            break;
+        }
+    }
 
     // Cleanup
     free(pixels);
@@ -120,4 +126,3 @@ int main(int argc, char *argv[]) {
 
     return 0;
 }
-
